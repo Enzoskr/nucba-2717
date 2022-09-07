@@ -1,3 +1,6 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 h1 {
   background-color: #432fb3;
   color: whitesmoke;
@@ -14,3 +17,4 @@ h2 {
   background-color: rgb(219, 202, 235);
   font-size: 20px;
 }
+/* importante usar este comando */
