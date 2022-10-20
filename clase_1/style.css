@@ -1,13 +1,22 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  background: url(rosa.jpg);
+  /* background-repeat: no-repeat;
+  background-size: 100%;*/
+}
+.img {
+  background-color: aliceblue;
+}
+
 h1 {
   background-color: #432fb3;
   color: whitesmoke;
   border: solid lightblue 2px;
 }
 h2 {
-  background-color: #432fb3;
+  background-color: rosybrown;
   color: whitesmoke;
 }
 .caja {
