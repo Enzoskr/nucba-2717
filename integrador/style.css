@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* colores */
+  --background: #d9ae94;
+  --bg-vainilla: #f1dca7;
+  --bg-mostaza: #ffcb69;
+  --bg-naranja: #d08c60;
+  --bg-marron: #997b66;
+  --bg-verde-oliva: #797d62;
+  --bg-verde-pastel: #9b9b7a;
+
+  /* colores de textos */
+  --text-color-blanco: #fafafa;
+  --text-color-negro: #000000;
+  --text-color-gris: #6666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", sans-serif;
+}
+/*  header */
+header {
+  background-color: var(--bg-verde-oliva);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 40px;
+  position: fixed;
+  top: 0;
+}
+.logo {
+  height: 70%;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar {
+  gap: 200px;
+  color: var(--text-color-blanco);
+}
+.navbar-list {
+  gap: 40px;
+}
+.navbar-list li {
+  color: var(--text-color-blanco);
+}
+
+body {
+  background-color: var(--background);
+}
