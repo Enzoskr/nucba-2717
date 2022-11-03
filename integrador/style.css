@@ -23,6 +23,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "poppins", sans-serif;
+  border: 1px solid red;
 }
 /*  header */
 header {
@@ -36,6 +37,12 @@ header {
   position: fixed;
   top: 0;
 }
+
+.header {
+  background-color: black;
+  display: flex;
+}
+
 .logo {
   height: 70%;
   gap: 40px;
@@ -48,6 +55,12 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 30px;
 }
 
 .navbar {
@@ -63,4 +76,111 @@ header {
 
 body {
   background-color: var(--background);
+}
+/* MAIN */
+main {
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-negro);
+  width: 100%;
+}
+
+/* HERO */
+
+#hero {
+  margin-top: 80px;
+  padding: 70px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bg-marron); */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  min-width: 400px;
+  width: 80%;
+  font-weight: 800;
+  color: var(--text-color-negro);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text p {
+  display: flex;
+  font-size: 18px;
+  width: 100%;
+  color: var(--text-color-negro);
+}
+
+.hero-text a {
+  background-color: var(--bg-verde-oliva);
+  padding: 10px 0px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+.info-hero {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-verde-oliva);
+  padding: 20px;
+  border-radius: 1rem;
+  gap: 10px;
+}
+.escuela-info {
+}
+
+/* container de info */
+.info h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.info {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 14px;
+}
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-verde-oliva);
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+  color: var(--text-color-black);
+  border-radius: 1rem;
+  padding: 40px;
+}
+.info-card i {
+  text-align: center;
+  font-size: 30px;
+  gap: 14px;
+}
+.info-card p {
+  text-align: center;
 }
