@@ -23,7 +23,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "poppins", sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /*  header */
 header {
@@ -54,7 +54,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 .redes {
   display: flex;
@@ -106,7 +105,7 @@ main {
   gap: 20px;
   align-items: center;
   width: 50%;
-  padding: 10px;
+  padding: 100px;
 }
 
 .hero-text h1 {
@@ -146,13 +145,13 @@ main {
 }
 
 /* container de info */
-.info h2 {
+#info h2 {
   text-decoration: underline;
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
 }
-.info {
+#info {
   display: flex;
   max-width: 1200px;
   flex-direction: column;
@@ -189,16 +188,17 @@ main {
   background-color: var(--bg-marron);
 }
 
-/* container de lugares */
- {
+#container-de-lugares h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 #container-de-lugares {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   width: 1200px;
+  margin-top: 50px;
 }
 
 .lugares-de-consideracion {
@@ -210,6 +210,7 @@ main {
   gap: 50px;
   padding: 40px 0px;
   max-width: 1200px;
+  margin-top: 40px;
 }
 .equipo-2 {
   background-color: var(--bg-naranja);
@@ -217,12 +218,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 380px;
   max-width: 1200px;
   height: 40%;
   align-items: stretch;
 
   border-radius: 1rem;
+}
+.equipo-2 img {
+  border-radius: 1rem;
+  max-width: 500px;
+  height: 400px;
 }
 
 /* Footer */
