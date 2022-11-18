@@ -15,7 +15,245 @@
   --text-color-negro: #000000;
   --text-color-gris: #6666;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", sans-serif;
+  border: 1px solid red;
+}
+/*  header */
+header {
+  background-color: var(--bg-verde-oliva);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 40px;
+  position: fixed;
+  top: 0;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+}
+
+.logo {
+  height: 70%;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.navbar {
+  gap: 200px;
+  color: var(--text-color-blanco);
+}
+.navbar-list {
+  gap: 40px;
+}
+.navbar-list li {
+  color: var(--text-color-blanco);
+}
+
+body {
+  background-color: var(--background);
+}
+/* MAIN */
+main {
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-negro);
+  width: 100%;
+}
+
+/* HERO */
+
+#hero {
+  margin-top: 80px;
+  padding: 70px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bg-marron); */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  min-width: 400px;
+  width: 80%;
+  font-weight: 800;
+  color: var(--text-color-negro);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text p {
+  display: flex;
+  font-size: 18px;
+  width: 100%;
+  color: var(--text-color-negro);
+}
+
+.hero-text a {
+  background-color: var(--bg-verde-oliva);
+  padding: 10px 0px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+.info-hero {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-verde-oliva);
+  padding: 20px;
+  border-radius: 1rem;
+  gap: 10px;
+}
+.escuela-info {
+}
+
+/* container de info */
+.info h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.info {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+}
+.info-container {
+  display: flex;
+  flex: wrap;
+  margin-top: 40px;
+  gap: 14px;
+}
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-verde-oliva);
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+  color: var(--text-color-black);
+  border-radius: 1rem;
+  padding: 40px;
+  max-height: 80%;
+}
+.info-card i {
+  text-align: center;
+  font-size: 30px;
+  gap: 14px;
+}
+.info-card p {
+  text-align: center;
+}
 .fa-thin,
 .fa-school {
   background-color: var(--bg-marron);
+}
+
+/* container de lugares */
+ {
+  text-align: center;
+  font-size: 30px;
+}
+#container-de-lugares {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 1200px;
+}
+
+.lugares-de-consideracion {
+  /* background-color: var(--bg-vainilla); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 0px;
+  max-width: 1200px;
+}
+.equipo-2 {
+  background-color: var(--bg-naranja);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  max-width: 1200px;
+  height: 40%;
+  align-items: stretch;
+
+  border-radius: 1rem;
+}
+
+/* Footer */
+.footer {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+ background-color: var(--bg-celesteclaro); */
+  background: var(--background);
+  color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 0;
+}
+footer a,
+p {
+  color: var(--text-color-negro);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 0;
 }
