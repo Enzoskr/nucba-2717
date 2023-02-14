@@ -13,24 +13,63 @@
   </head>
   <body>
     <header>
-      <img src="./assets/img/Enzo store.png" alt="logo" class="logo" href="#" />
+      <img src="./assets/img/imagenes/Enzostore.png" alt="logo" class="logo" href="#" />
        <nav class="navbar">
-         <label for="menu-toggle" class="menu-label">
-           <i class="fa-solid fa-bars"></i>
-         </label>
-         <input type="checkbox" id="menu-toggle">
+         <!-- <label for="menu-toggle" class="menu-label"> -->
+           <!-- <i class="fa-solid fa-bars"></i> -->
+         <!-- </label> -->
+         <!-- <input type="checkbox" id="menu-toggle"> -->
          <ul class="navbar-list">
-           <li><a href="#container-de-lugares"> inicio</a></li>
-           <li><a href="#info">tienda </a></li>
-           <div class="redes">
-             <li><a href="#"></a><i class="fa-brands fa-instagram"></i></a></li>
-             <li><a href="#"></a><i class="fa-brands fa-whatsapp"></i></a></li>
-             <li><a href="#"></a><i class="fa-brands fa-square-facebook"></i></a></li>
-           </div>
-         </ul>
-       </nav>
+           <li><a href="#inicio"> inicio</a></li>
+           <li><a href="#productos">productos</a></li>
+           <li><a href="#about-us">sobre nosotros </a></li>
+           <li><a href="#login">inicia sesión </a></li>
+           <i class="fa-solid fa-cart-shopping"></i>
+          </nav>
+       
      </header>
      <main>
+      <!-- hero -->
+      <section id="hero">
+      <div class="hero-info">
+        <h1>Juga a lo mejor con lo mejor
+        </h1>
+        <p>En ENZO-STORE es una tienda de componentes donde vas a ver los mejores
+        precios para jugar sin ningun problemas a todos tus juegos favoritos,
+          encontraras un amplio margen para elegir tus componentes de preferencia
+          a la hora de jugar. Manejamos las mejores marcas y con garantía.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./assets/img/imagenes/placa gigabyte.png" alt="placa-hero">
+      <div class="hero-card-info">
+        <div class="hero-card-top">
+          <h3>Placa de video 3070 gigabyte </h3>
+          <span><i class="fa-solid fa-truck-fast"></i></span>
+        </div>
+         <div class="hero-card-botton">
+          <div class="marca-ensambladora"><p>Gigabyte</p></div>
+          <div class="hero-card-precio"><p>💲140.000</p></div>
+        </div>
+      
+      </div></div>
+
+        
+      </section>
+      <!-- productos -->
+      <section id="productos">
+        <h2>componentes</h2>
+        <!-- categorias -->
+<button class="category active"></button>
+<button class="category" data-category="monitores">Monitores</button>
+<button class="category" data-category="perisfericos">Perisféricos</button>
+<button class="category" data-category="placas de video">Placas de video</button>
+<button class="category" data-category="procesadores">Procesadores</button>
+<button class="category" data-category="accesorios">Accesorios<button>
+      </section>
+      
+      
+     </main>
  
   </body>
 </html>
