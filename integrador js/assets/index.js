@@ -1,12 +1,10 @@
 const products = document.querySelector(".productos-container");
-
+//btn ver mas
 const btnLoad = document.querySelector(".btn-load");
-
+//contenedor de las categorias
 const categories = document.querySelector(".categorias");
-
+//las categorias en un htmlcollection de los botones
 const categoriesList = document.querySelectorAll(".category");
-
-//funcion para ir a guardar e ir a buscar en el localstorage //
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -54,18 +52,21 @@ const renderFilteredProductos = (category) => {
   const productsList = productsdata.filter((productos) => {
     return productos.category === category;
   });
-  productos.innerHTML = productsList.map(renderproduct).join("");
+  products.innerHTML = productsList.map(renderproduct).join("");
 };
 
-const renderproducts = (index = 0, category = undefined) => {
+const renderProducts = (index = 0, category = undefined) => {
   if (!category) {
     renderdividedproducts(index);
     return;
   }
   renderFilteredProductos(category);
 };
+//// renderizado de cards
 
-const changeshowmoreBtnstate = (category) => {
+///paginación
+
+const changeShowMoreBtnState = (category) => {
   if (!category) {
     btnLoad.classList.remove("hidden");
     return;
@@ -73,24 +74,24 @@ const changeshowmoreBtnstate = (category) => {
   btnLoad.classList.add("hidden");
 };
 
-const changeBtnActiveState = (selectedcategory) => {
-  const categorias = [...categoriesList];
-  categorias.forEach((categoryBtn) => {
-    if (categoryBtn.dataset.category !== selectedcategory) {
+const changeBtnActiveState = (selectedCategory) => {
+  const categories = [...categoriesList];
+  categories.forEach((categoryBtn) => {
+    if (categoryBtn.dataset.category !== selectedCategory) {
       categoryBtn.classList.remove("active");
       return;
     }
     categoryBtn.classList.add("active");
   });
 };
-
+////
 const changeFilterState = (e) => {
-  const selectedcategory = e.target.dataset.category;
-  changeshowmoreBtnstate(selectedcategory);
-  changeBtnActiveState(selectedcategory);
+  const selectedCategory = e.target.dataset.category;
+  changeShowMoreBtnState(selectedCategory);
+  changeBtnActiveState(selectedCategory);
 };
-
-const applyfilter = (e) => {
+///
+const applyFilter = (e) => {
   if (!e.target.classList.contains("category")) {
     return;
   } else {
@@ -98,16 +99,16 @@ const applyfilter = (e) => {
   }
   if (!e.target.dataset.category) {
     products.innerHTML = "";
-    renderproducts();
+    renderProducts();
   } else {
-    renderproducts(0, e.target.dataset.category);
-    productscontroller.nextproductsIndex = 1;
+    renderProducts(0, e.target.dataset.category);
+    productscontroller.nextProductsIndex = 1;
   }
 };
 //////
 const init = () => {
-  renderproducts();
-  categories.addEventListener("click", applyfilter);
+  renderProducts();
+  categories.addEventListener("click", applyFilter);
 };
 
 init();
