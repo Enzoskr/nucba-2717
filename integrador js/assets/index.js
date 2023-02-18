@@ -105,10 +105,26 @@ const applyFilter = (e) => {
     productscontroller.nextProductsIndex = 1;
   }
 };
+
+const isLastIndexOf = () => {
+  return (
+    productscontroller.nextProductsIndex === productscontroller.productslimit
+  );
+};
+
+const showMoreProducts = () => {
+  renderProducts(productscontroller.nextProductsIndex);
+  productscontroller.nextProductsIndex++;
+  if (isLastIndexOf()) {
+    btnLoad.classList.add("hidden");
+  }
+};
+
 //////
 const init = () => {
   renderProducts();
   categories.addEventListener("click", applyFilter);
+  btnLoad.addEventListener("click", showMoreProducts);
 };
 
 init();
