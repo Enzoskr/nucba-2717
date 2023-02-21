@@ -95,7 +95,7 @@ header {
   color: var(--text-color-blanco);
 }
 
-.login-container {
+.form__container {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-metal);
@@ -110,29 +110,44 @@ header {
   width: 90%;
   align-items: center;
 }
-.text-below-name p {
+.form__title {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 16px;
   margin-top: 12px;
-  text-align: initial;
+
   font-weight: 600;
   color: var(--text-color-negro);
 }
-.imputs {
-  margin-top: 8px;
+.section-login {
+  margin-top: 40px;
   gap: 8px;
   display: flex;
   flex-direction: column;
-  text-align: left;
   height: 250px;
 }
-.imputs input {
+.form__field {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 4px;
-  border-radius: 8px;
-  height: 30px;
-  box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.75);
+  gap: 12px;
+  /* box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.75); */
   padding-left: 8px;
+  align-items: center;
 }
-.registrarse {
+.form__field.error input {
+  border: 1px solid red;
+}
+.form__field.success input {
+  border: 1px solid var(--bg-verde);
+}
+.small {
+  color: red;
+  max-width: 350px;
+  text-align: center;
+  padding: 7px 0;
+}
+.form__submit__btn {
   margin-top: 20px;
   border-radius: 12px;
   background: var(--bg-azul);
@@ -143,10 +158,16 @@ header {
   padding: 8px;
   cursor: pointer;
 }
+.form__input {
+  padding: 15px 35px 15px 15px;
+  width: 300px;
+}
+/*REDES  */
 .ingreso-redes {
   margin-top: 14px;
 }
 .ingreso-redes p {
+  text-align: center;
   font-size: 12px;
   font-weight: 600;
 }

@@ -5,26 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./login.html" />
     <link rel="stylesheet" href="./login.css" />
+
     <script
       src="https://kit.fontawesome.com/ba6e243ea4.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-list">
+            <a href="assets/login.html">INICIO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="section-login">
-      <header>
-        <nav class="navbar">
-          <ul>
-            <li class="nav-list"><a href="/index.html">INICIO</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="login-container">
+      
+      <form class="form__container" id="form">
         <div class="logo-container">
-          <img src="./img/imagenes/logopagina-1.png " alt="logo" />
+          <img src="./img/imagenes/logopagina-1.png" alt="logo" />
         </div>
+        <p class="form__title">CREA TU CUENTA</p>
+        <div class="form__field">
+          <input
+            type="text"
+            placeholder="Username"
+            id="username"
+            class="form__input"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <div class="form__field">
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input"
+            id="email"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <div class="form__field">
+          <input
+            type="password"
+            placeholder="Password"
+            class="form__input"
+            id="password"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <div class="form__field">
+          <input
+            type="text"
+            placeholder="Teléfono"
+            class="form__input"
+            id="phone"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <input type="submit" class="form__submit__btn" value="Ingresar" />
+    
+      <!-- <section class="login-container">
+       
 
         <div class="text-below-name">
           <p>INGRESA A TU CUENTA</p>
@@ -36,17 +84,21 @@
           <input type="mail" placeholder="Introduzca el mail" />
           <label>Contraseña:</label>
           <input type="password" placeholder="Introduzca una Contraseña" />
+          <label for="number">Teléfono</label>
+          <input type="number" placeholder="Introduzca una Contraseña" />
         </div>
-        <div class="registrarse">REGISTRARSE</div>
-        <div class="ingreso-redes">
+        <div class="registrarse">REGISTRARSE</div>-->
+
+        <div class="ingreso-redes"> 
           <p>O PUEDES INGRESAR CON:</p>
           <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-google"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <div></div>
-      </section>
+      </form>
+      </section> 
     </main>
+    <script src="./mainlogin.js"></script>
   </body>
 </html>
