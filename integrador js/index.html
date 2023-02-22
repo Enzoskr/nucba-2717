@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EnzoskR store</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./index.html">
 
     <script
     src="https://kit.fontawesome.com/ba6e243ea4.js"
@@ -14,33 +15,48 @@
   </head>
   <body>
     <header>
-       <img src="./assets/img/imagenes/logopagina-1.png" alt="logo" class="logo" id="box" href="#" />
+       <img src="./assets/login/logopagina-1.png" alt="logo" class="logo" id="box" href="#" />
        <nav class="navbar">
        
-         <label for="menu-toggle" class="menu-label">
+         <!-- <label for="menu-toggle" class="menu-label"> -->
            <!-- <i class="fa-solid fa-bars"></i> -->
          <!-- </label> -->
          <!-- <input type="checkbox" id="menu-toggle"> -->
-         <ul class="navbar-list">
-           <li><a href="#inicio"> INICIO</a></li>
-           <li><a href="#productos">PRODUCTOS</a></li>
-           <li><a href="#section-footer">SOBRE NOSOTROS </a></li>
-           <li><a href="./assets/login.html">INICIA SESION </a></li>
-           <i class="fa-solid fa-cart-shopping"></i>
-          </nav>
+         <ul class="navbar__list lista">
+           <li class="list__link"><a href="#inicio"> INICIO</a></li>
+           <li class="list__link"><a href="#productos">PRODUCTOS</a></li>
+           <li class="list__link"><a href="#section-footer">SOBRE NOSOTROS </a></li>
+         </ul>
+         <ul class="navbar__list registro">
+           <li class="list__link inicio sesion"><a href="./assets/login/login.html">INICIA SESION </a></li>
+           <li class="list__link crear cuenta"><a href="./assets/login/account new/account.html">REGISTRATE </a></li>
+          </ul>
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </nav>
        
      </header>
      <main>
       <!-- hero -->
       <section id="hero">
-      <div class="hero-info">
+      <div class="banners">
+      <img src="assets/img/imagenes/hyperxbanner.jpg" class="banner" alt="hyperx">
+      <img src="assets/img/imagenes/banner logi.jpg" class="banner" alt="logitech">
+    </div>
 
-        <h1>MetaGaming</h1>
-        <p>En ENZO-STORE es una tienda de componentes donde vas a ver los mejores
+        <!--<div class="hero-info">
+
+         <h1>ENZ-store</h1>
+         <p>
+          En ENZO-STORE es una tienda de componentes donde vas a ver los mejores
         precios para jugar sin ningun problemas a todos tus juegos favoritos,
           encontraras un amplio margen para elegir tus componentes de preferencia
-          a la hora de jugar. Manejamos las mejores marcas y con garantía.
+          a la hora de jugar. Manejamos las mejores marcas y con garantía. 
         </p>
+      </div>
+      <div class="img-hero">
+        <img src="assets/img/imagenes/photo header.jpg" alt="">
       </div>
       <div class="card">
         <img src="./assets/img/imagenes/placa gigabyte.png" alt="placa-hero">
@@ -55,9 +71,32 @@
           <div class="hero-card-precio"><p>💲140.000</p></div>
         </div>
       </div>
-    </div> 
+    </div>  --> 
   </section>
-    <section id="info">
+
+
+        
+     
+      <!-- productos -->
+      <section id="productos">
+        <h2>Componentes</h2>
+        <!-- categorias -->
+        <div class="categorias">
+<button class="category active">Todos los productos</button>
+<button class="category" data-category="Monitores">Monitores</button>
+<button class="category" data-category="perisfericos">Perisféricos</button>
+<button class="category" data-category="placas de video">Placas de video</button>
+<button class="category" data-category="Procesadores">Procesadores</button>
+<button class="category" data-category="accesorios">Accesorios</button>
+        </div>
+        <!-- productos -->
+
+      <div class="productos-container">
+    
+      </div>
+
+        <button class="btn-load">Ver Más</button>
+      </section>      <section id="info">
       <h2>¿Que ofrecemos?</h2>
       <div class="info-cards-container">
         <div class="info-card">
@@ -87,29 +126,6 @@
       
     </section>
 
-
-        
-     
-      <!-- productos -->
-      <section id="productos">
-        <h2>Componentes</h2>
-        <!-- categorias -->
-        <div class="categorias">
-<button class="category active">Todos los productos</button>
-<button class="category" data-category="Monitores">Monitores</button>
-<button class="category" data-category="perisfericos">Perisféricos</button>
-<button class="category" data-category="placas de video">Placas de video</button>
-<button class="category" data-category="Procesadores">Procesadores</button>
-<button class="category" data-category="accesorios">Accesorios</button>
-        </div>
-        <!-- productos -->
-
-      <div class="productos-container">
-    
-      </div>
-
-        <button class="btn-load">Ver Más</button>
-      </section>  
      </main>
   <footer class="container">
       <div class="section-footer">

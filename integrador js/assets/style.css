@@ -73,12 +73,20 @@ header {
 }
 
 .navbar,
-.navbar-list,
-.navbar-list a {
+.navbar__list,
+.navbar__list a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 150px;
+  color: var(--text-color-negro);
+}
+
+.navbar-listsesions {
+  /* color: black; */
+  display: flex;
+}
+.navbar-listsesions a {
   color: var(--text-color-negro);
 }
 .redes {
@@ -88,18 +96,26 @@ header {
   font-size: 30px;
 }
 
-.nav.navbar {
+.nav .navbar {
   gap: 200px;
 }
-.navbar-list {
+.navbar__list {
   gap: 30px;
+  display: flex;
 }
 
-.navbar-list a {
+.navbar__list a {
   font-size: 14px;
 }
-.navbar-list li:first-child > a {
-  text-decoration: underline;
+.navbar__list li:first-child > a {
+  font-weight: 600;
+}
+.list__link.inicio.sesion a {
+  color: var(--bg-azul);
+  font-weight: 600;
+}
+.list__link.crear.cuenta a {
+  color: var(--bg-electric);
   font-weight: 600;
 }
 
@@ -114,12 +130,25 @@ main {
 }
 /* Hero */
 #hero {
-  margin-top: 80px;
-  padding: 70px 0;
-  max-width: 1200px;
+  width: 100%;
+  margin-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: ;
+}
+.banners {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.banner {
+  margin-top: 80px;
+  height: 250px;
+}
+
+.img-hero {
+  height: 70%;
 }
 .hero-info {
   display: flex;
@@ -133,7 +162,7 @@ main {
   width: 80%;
 
   min-width: 500px;
-  background: linear-gradient(to top, #fcbf49, #e71d36);
+  background: linear-gradient(to top, var(--bg-electric), var(--bg-azul));
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
