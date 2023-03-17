@@ -1,0 +1,133 @@
+@media (max-width: 992px) {
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-info h1 {
+    text-align: center;
+  }
+  #hero img {
+    display: none;
+  }
+  .about-us {
+    padding: 90px;
+  }
+  .about-us img {
+    display: none;
+  }
+  footer {
+    gap: unset;
+  }
+  footer a {
+    font-size: 14px;
+    font-weight: 600px;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    flex-direction: column;
+    background-color: var(--bg-naranja1);
+    border-radius: 21px solid var(--bg-metal);
+    border-top: 0px;
+    /* border: 0px 0px 15px 15px; */
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 20px;
+    z-index: 2;
+    color: var(--text-color-blanco);
+    display: none;
+  }
+  .navbar-list a {
+    font-size: 16px;
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+  }
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
+  .hero-info h1 {
+    font-size: 32px;
+    max-width: 500px;
+    min-width: unset;
+  }
+  #info {
+    width: 90%;
+    gap: unset;
+    padding: unset;
+  }
+
+  .info-cards-container {
+    width: 90%;
+  }
+
+  #container-de-lugares {
+    width: 90%;
+  }
+  #container-de-lugares h2 {
+    font-size: 40px;
+    max-width: 500px;
+    min-width: unset;
+  }
+  .equipo-2 {
+    size: 20px;
+
+    width: 90%;
+    max-width: 500px;
+    max-height: 600px;
+    min-width: unset;
+  }
+  .about-us {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .about-us {
+    max-width: 500px;
+    min-width: none;
+    padding: unset;
+  }
+  .about-us-text {
+    max-width: 500px;
+    min-width: none;
+    padding: none;
+  }
+  .about-us-text h3 {
+    font-size: 30px;
+    text-align: initial;
+    text-align: center;
+  }
+
+  #info h2,
+  #container-de-lugares h2 {
+    padding: 30px;
+    text-align: center;
+  }
+  .lugares-de-consideracion {
+    gap: 30px;
+    padding: unset;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  .footer-links {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: none;
+    text-decoration: underline black 1px;
+  }
+}

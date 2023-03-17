@@ -1,0 +1,155 @@
+@media (max-width: 992px) {
+  .navbar {
+    gap: 50px;
+  }
+  .navbar-list {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    width: 90%;
+    right: 5%;
+    flex-direction: column;
+    background: var(--bg-negroclaro);
+    border: 2px solid var(--bg-violeta);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 30px 20px;
+    gap: 10px;
+    z-index: 2;
+    color: var(--text-color-blanco);
+    display: none;
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+  .open-menu {
+    display: flex;
+  }
+  .navbar-list a {
+    color: var(--text-color-blanco);
+  }
+  div.cart.open-cart {
+    padding: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .categorias {
+    gap: 14px;
+    flex-direction: column;
+  }
+  .logo {
+    width: 150px;
+  }
+  .banner {
+    padding: 20px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 0px 18px;
+  }
+
+  .navbar {
+    gap: 20px;
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    padding: 3px;
+    order: 2;
+  }
+
+  .cart-icon {
+    padding: 2px;
+  }
+  h1 {
+    font-size: 24px;
+    min-width: 0px;
+    display: flex;
+  }
+  .banners {
+    display: none;
+  }
+  .bannerrog {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    margin-top: 24px;
+    align-items: center;
+  }
+
+  img.bannermq {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+  }
+  .cart-item {
+    flex-direction: column;
+  }
+
+  #productos {
+    width: 90%;
+  }
+  #productos h2 {
+    font-size: 28px;
+  }
+  /* container productos */
+  .productos-container {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 0px;
+    max-width: 400px;
+    width: 100%;
+  }
+  /* cards */
+  .card {
+    width: 90%;
+    height: 380px;
+    padding: 0 19px;
+  }
+  .card img {
+    height: 56%;
+  }
+  /* section info */
+  #info {
+    padding: 50px 0;
+  }
+  #info h2 {
+    font-size: 28px;
+  }
+  .info-card {
+    width: 80%;
+    padding: 30px 30px;
+    height: 100%;
+  }
+
+  /* footer */
+  #section-footer {
+    flex-direction: column;
+  }
+  #section-footer h3 {
+    margin-left: 12px;
+  }
+  ul.redes {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  ul.ayuda,
+  ul.contacto {
+    margin-left: 20px;
+  }
+  .contenedor-datafiscal img {
+    margin-left: 20px;
+  }
+  .categorias {
+    gap: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

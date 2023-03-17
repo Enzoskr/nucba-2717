@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escuela</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
     <script
       src="https://kit.fontawesome.com/ba6e243ea4.js"
       crossorigin="anonymous"
@@ -13,13 +14,15 @@
   </head>
   <body>
     <header>
-      </div>
-      <img src="./assets/img/escuela.png" alt="logo" class="logo" href="#" />
-      <nav class="nabvar">
+     <img src="./assets/img/escuela.png" alt="logo" class="logo" href="#" />
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle">
         <ul class="navbar-list">
-          <li><a href="#info"> Alumnos</a></li>
-          <li><a href="#container-de-lugares">Docentes</a></li>
-
+          <li><a href="#container-de-lugares"> Alumnos</a></li>
+          <li><a href="#info">Docentes</a></li>
           <div class="redes">
             <li><a href="#"></a><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"></a><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -29,29 +32,49 @@
       </nav>
     </header>
     <main>
+      <!-- hero -->
       <section id="hero">
-        <div class="hero-text">
-          <h1>Escuela</h1>
-          <p>aca va el texto sobre la info de la escuela</p>
-          <a href="#"> inicia sesión</a>
+        <div class="hero-info">
+          <h1>Instituto de Educación</h1>
+          <p>
+            Instituto educativo calificado, de los mejores 
+            colegios rankeados en argentina ubicado en la provincia 
+            de Buenos Aires 
+          </p>
+          <div class="login"><a href="./assets/login.html"> Inicia Sesión</a></div>
         </div>
-        <div class="info-hero">
-          <img src="./assets/img/escuela.jpg" alt="" />
-          <div class="escuela-info">
-            <ul>
-              <li>VILLA OLIMPICA</li>
-              <li>ESCUELA TOP 10 EN EL RANKING DE ARGENTINA</li>
-              <li>ALUMNOS CALIFICADOS</li>
-            </ul>
+        <div class="info-img">
+          <img src="./assets/img/escuela.jpg" alt="foto-hero" >
           </div>
-        </div>
       </section>
       <section id="info">
         <h2>Notables Docentes</h2>
-        <div class="info-container">
-          <div class="info-card"><i class="fa-solid fa-pencil"></i><p>En nuestras escuelas, tendras, además de profesores en cada materia, tambien dispondras de un tutor para todas los problemas puntuales que tengan.</p></div>
-          <div class="info-card"><i class="fa-solid fa-file-pen"></i><p>Nuestros profesores, son puestos a prueba cada 2 años con un examen para tener en cuenta nuevos conocimientos y mejoras para la forma de enseñar.</p></div>
-          <div class="info-card"><i class="fa-solid fa-pen-ruler"></i><p>proveemos con capacitaciones para futuros estudios de los estudiantes, materias especificas para ingresar a la facultad para tener los conocimientos suficientes para ingresar de una forma optima.</p></div>
+        <div class="info-cards-container">
+          <div class="info-card">
+            
+            <i class="fa-solid fa-pencil" alt="iconos-container"></i>
+            <h3>Tipos de Profesores</h3>
+            <p>En nuestras escuelas, tendras, además de profesores en cada materia,
+               tambien dispondras de un tutor para todos los problemas
+               puntuales que tengan.
+              </p>
+              </div>
+          <div class="info-card"><i class="fa-solid fa-file-pen" alt="iconos-container"></i>
+            <h3>Prueba de profesores</h3>
+            <p>
+              Nuestros profesores, son puestos a prueba cada 2 años con un examen 
+              para tener en cuenta
+              nuevos conocimientos y mejoras para la forma de enseñar.
+            </p>
+          </div>
+          <div class="info-card"><i class="fa-solid fa-pen-ruler" alt="iconos-container"></i>
+            <h3>Capacitación de profesores</h3>
+            <p>
+              Proveemos de capacitaciones para futuros estudios de los alumnos, 
+              materias especificas previas para ingresar a una facultad para tener conocimientos
+              suficientes para ingresar de la mejor forma a ella.
+            </p>
+          </div>
         </div>
         
       </section>
@@ -63,36 +86,36 @@
         <div class="equipo-2">
               <img src="./assets/img/pista de atletismo.jpg" alt="lugar-considerable" />
                 <div class="equipo2">
-                  <div class="equipotop2"><h3>pista de atletismo</h3>
-                  <span>pista profesional preparada para competiciones oficiales</span></div></div>
-                  <div class="equipo-región2">Ucrania</div>
+                  <div class="equipotop2"><h3>Pista de atletismo</h3>
+                  <span>Pista profesional preparada para competiciones oficiales.</span></div></div>
+                  
           </div>
   
         <!-- lug 2 -->
         <div class="equipo-2">
           <img src="./assets/img/piscina.jpg" alt="lugar-considerable" />
             <div class="equipo2">
-              <div class="equipotop2"><h3>piscina profesional climatica</h3>
-              <span>piscina de 100 metros profesional</span></div></div>
-              <div class="equipo-región2">Estados Unidos</div>
+              <div class="equipotop2"><h3>Piscina profesional climatica</h3>
+              <span>Piscina de 100 metros profesional, climatizada apta para competir</span></div></div>
+              
       </div>
       
       <!-- lug 3 -->
       <div class="equipo-2">
         <img src="./assets/img/cancha de basquet.jpg" alt="lugar-considerable" />
           <div class="equipo2">
-            <div class="equipotop2"><h3>cancha de basquet</h3>
-            <span>cancha de basquet profesional del equipo de la escuela.</span></div></div>
-            <div class="equipo-región2">Dinamarca</div>
+            <div class="equipotop2"><h3>Cancha de basquet</h3>
+            <span>Cancha de basquet profesional del equipo de la escuela.</span></div></div>
+            
       </div>
       
       <!-- lug 4 -->
             <div class="equipo-2">
               <img src="./assets/img/aula magna.jpg" alt="lugar-considerable" />
                 <div class="equipo2">
-                  <div class="equipotop2"><h3>aula magna</h3>
-                  <span>sonido ambiente optimo, con clases mensuales de figuras importantes.</span></div></div>
-                  <div class="equipo-región2">Europa</div>
+                  <div class="equipotop2"><h3>Aula Magna</h3>
+                  <span>Sonido ambiente optimo, con clases mensuales de figuras importantes.</span></div></div>
+                  
                   </div>
       
                   <!-- lug 6 -->
@@ -101,31 +124,46 @@
                       <div class="equipo2">
                         <div class="equipotop2"><h3>Aulas con calefación</h3>
                         <span>Aulas climatizadas con calefacciones adecuadas.</span></div></div>   
-                        <div class="equipo-región2">Europa</div>                  
+                                     
                 </div>
       
                 <!-- equipo 6 -->
                   <div class="equipo-2">
                     <img src="./assets/img/biblioteca.jpg" alt="lugar-considerable" />
-                      <div class="partetop">
-                        <div class="partetop2"><h3>biblioteca insonidificada</h3>
-                        <span>biblioteca de 100m² insonidificada para el estudio sin inquietud del ambiente</span></div>
-                        <div class="equipo-región2">Europa</div></div>
+                        <div class="equipotop2"><h3>Biblioteca Insonidificada</h3>
+                        <span>Biblioteca de 100m² insonidificada para el estudio sin inquietud del ambiente</span></div>
+                        
                 </div>
       </section>  
 
       <!-- nuestras cosas destacadas -->
-      <section class="categorias"></section>
-    </main>
+      <section class="about-us">
+        <div class="about-us-text">
+        <h3 >Nosotros</h3>
+        <p>Somos un instituto calificado, dedicado a la preparación
+          de un futuro para el mundo,enseñamos y formamos a futuras
+          personas adultas, a ser profesionales y tener un futuro prospero.
+          tenemos, a los mejores profesores formadores, una institución
+          Capacitada para todo tipo de necesidades
+          de los jovenes que ingresan a nuestra institución.
+        </p>  
+      </div>
+        <img src="./assets/img/sobre nosotros.jpg" alt="img-about-us">
+      
+      </section>
+      <hr>
+    </main> 
+   
     <footer>
+      
+      
       <ul class="footer-links">
-        <li><a href="#">Terminos de uso</li>
-        <li><a href="#">Contactanos</li>
-        <li><a href="#">Soporte</li>
+        <li> <a href="#"> CONTACTANOS</a></li>
+        <li> <a href="#"> TERMINOS DE USO</a></li>
+        <li> <a href="#"> SOPORTE</a></li>
       </ul>
-
-    
-      <p>TRABAJO HECHO CON AMOR💖</p>
+      <hr />
+ <p>Trabajo hecho con AMOR💕</p>     
     </footer>
   </body>
 </html>

@@ -179,7 +179,10 @@ i {
   color: var(--text-color-negro);
 }
 @media (max-width: 576px) {
-  .login-container {
+  .form__container {
+    width: 90%;
+  }
+  .form__input {
     width: 90%;
   }
 }

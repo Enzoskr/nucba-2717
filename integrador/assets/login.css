@@ -13,16 +13,6 @@
   --bg-color-lila: #cbc6f4;
   --bg-naranja: #eb5e28;
   --bg-naranja-claro: #f4a261;
-  --background: #fbf8f5;
-  --background-secondary: #fdfaed;
-  --bg-rojo: #e71d36;
-  --bg-azul: #003049;
-  --bg-naranja: #f77f00;
-  --bg-mostaza: #fcbf49;
-  --bg-amarillopastel: #eae2b7;
-  --bg-verde: #70e000;
-  --bg-negroclaro: #212529;
-  --bg-electric: #64d3ff;
 
   /* colores de textos */
   --text-color-blanco: #fafafa;
@@ -50,7 +40,7 @@ main {
   text-align: center;
 }
 header {
-  background-color: var(--bg-azul);
+  background-color: var(--background);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -59,7 +49,6 @@ header {
   padding: 0px 40px;
   position: relative;
   top: 0;
-  box-shadow: 0px 4px 3px 2px rgba(0, 0, 0, 0.75);
 }
 .navbar,
 .navbar-list {
@@ -68,35 +57,18 @@ header {
   justify-content: center;
 }
 .navbar li {
-  position: relative;
   font-size: 18px;
   font-weight: 600;
+  background-color: var(--bg-color-lila);
   padding: 12px;
   border-radius: 1rem;
 }
-.navbar li ::after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background: var(--text-color-blanco);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.15s ease;
-}
-.navbar li :hover::after {
-  transform-origin: bottom left;
-  transform: scaleX(1);
-}
 
 .navbar a {
-  color: var(--text-color-blanco);
+  color: var(--text-color-negro);
 }
 
-.form__container {
-  display: flex;
+.login-container {
   flex-direction: column;
   background-color: var(--bg-metal);
   width: 400px;
@@ -104,70 +76,59 @@ header {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 4px 3px 10px 4px #000000;
-  margin-top: 70px;
+  margin-top: 12px;
 }
 .logo-container img {
-  width: 90%;
+  width: 110px;
   align-items: center;
 }
-.form__title {
-  text-align: center;
-  margin-bottom: 20px;
+.nombre-escuela {
+  margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background: linear-gradient(to left, #cbc6f4, #eb5e28);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.text-below-name p {
   font-size: 16px;
   margin-top: 12px;
-
+  text-align: initial;
   font-weight: 600;
   color: var(--text-color-negro);
 }
-.section-login {
-  margin-top: 40px;
+.imputs {
+  margin-top: 8px;
   gap: 8px;
   display: flex;
   flex-direction: column;
+  text-align: left;
   height: 250px;
 }
-.form__field {
-  display: flex;
-  flex-direction: column;
+.imputs input {
   margin-bottom: 4px;
-  gap: 12px;
-  /* box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.75); */
+  border-radius: 8px;
+  height: 30px;
+  box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.75);
   padding-left: 8px;
-  align-items: center;
 }
-.form__field.error input {
-  border: 1px solid red;
-}
-.form__field.success input {
-  border: 1px solid var(--bg-verde);
-}
-.small {
-  color: red;
-  max-width: 350px;
-  text-align: center;
-  padding: 7px 0;
-}
-.form__submit__btn {
+.registrarse {
   margin-top: 20px;
   border-radius: 12px;
-  background: var(--bg-azul);
+  background: var(--bg-color-lila);
   height: 40px;
-  color: var(--text-color-blanco);
+  color: var(--text-color-negro);
   font-size: 18px;
   font-weight: 600;
   padding: 8px;
   cursor: pointer;
 }
-.form__input {
-  padding: 15px 35px 15px 15px;
-  width: 300px;
-}
-/*REDES  */
 .ingreso-redes {
   margin-top: 14px;
 }
 .ingreso-redes p {
-  text-align: center;
   font-size: 12px;
   font-weight: 600;
 }
@@ -179,10 +140,7 @@ i {
   color: var(--text-color-negro);
 }
 @media (max-width: 576px) {
-  .form__container {
-    width: 90%;
-  }
-  .form__input {
+  .login-container {
     width: 90%;
   }
 }

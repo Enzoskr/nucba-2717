@@ -7,6 +7,7 @@
     <title>EnzoskR store</title>
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 
     <script
     src="https://kit.fontawesome.com/ba6e243ea4.js"
@@ -15,63 +16,54 @@
   </head>
   <body>
     <header>
-       <img src="./assets/login/logopagina-1.png" alt="logo" class="logo" id="box" href="#" />
+       <img src="./assets/login/logopagina-1.png" alt="logo" class="logo"
+        id="box" href="#" />
        <nav class="navbar">
-       
-         <!-- <label for="menu-toggle" class="menu-label"> -->
-           <!-- <i class="fa-solid fa-bars"></i> -->
-         <!-- </label> -->
-         <!-- <input type="checkbox" id="menu-toggle"> -->
-         <ul class="navbar__list lista">
-           <li class="list__link"><a href="#inicio"> INICIO</a></li>
-           <li class="list__link"><a href="#productos">PRODUCTOS</a></li>
-           <li class="list__link"><a href="#section-footer">SOBRE NOSOTROS </a></li>
-         </ul>
-         <ul class="navbar__list registro">
-           <li class="list__link inicio sesion"><a href="./assets/login/login.html">INICIA SESION </a></li>
-           <li class="list__link crear cuenta"><a href="./assets/login/account new/account.html">REGISTRATE </a></li>
+        <div class="menu-label">
+          <i class="fa-solid fa-bars" class="menu-icon"></i>
+        </div>
+
+
+
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="#hero"> INICIO</a></li>
+            <li><a class="navbar-link" href="#productos">PRODUCTOS</a></li>
+            <li><a class="navbar-link" href="#section-footer">SOBRE NOSOTROS </a></li>
           </ul>
-          <div class="cart-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
+         <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon">
+              <div class="cart-bubble">0</div>
+            </i>
           </div>
+          <div class="cart">
+            <h2>Tu carrito</h2>
+
+            <div class="cart-container"></div>
+            
+            <hr class="card-hr" />
+            <div class="cart-total">
+              <p>Total:</p>
+              <span class="total"> 2000</span>
+            </div>
+            <button class="btn-buy">Confirmar Compra</button>
+            <button class="btn-delete">Vaciar carrito</button>
+
+          </div>
+          <div class="overlay"></div>
+
         </nav>
-       
      </header>
      <main>
       <!-- hero -->
       <section id="hero">
       <div class="banners">
-      <img src="assets/img/imagenes/hyperxbanner.jpg" class="banner" alt="hyperx">
-      <img src="assets/img/imagenes/banner logi.jpg" class="banner" alt="logitech">
+      <img src="./assets/img/imagenes/hyperxbanner.jpg" class="banner" alt="hyperx">
+      <img src="./assets/img/imagenes/banner logi.jpg" class="banner" alt="logitech"> 
     </div>
-
-        <!--<div class="hero-info">
-
-         <h1>ENZ-store</h1>
-         <p>
-          En ENZO-STORE es una tienda de componentes donde vas a ver los mejores
-        precios para jugar sin ningun problemas a todos tus juegos favoritos,
-          encontraras un amplio margen para elegir tus componentes de preferencia
-          a la hora de jugar. Manejamos las mejores marcas y con garantía. 
-        </p>
-      </div>
-      <div class="img-hero">
-        <img src="assets/img/imagenes/photo header.jpg" alt="">
-      </div>
-      <div class="card">
-        <img src="./assets/img/imagenes/placa gigabyte.png" alt="placa-hero">
-      <div class="hero-card-info">
-        <div class="hero-card-top">
-          
-          <h3>Placa de video 3070 gigabyte </h3>
-          <span><i class="fa-solid fa-truck-fast"></i></span>
-        </div>
-         <div class="hero-card-botton">
-          <div class="marca-ensambladora"><p>Gigabyte</p></div>
-          <div class="hero-card-precio"><p>💲140.000</p></div>
-        </div>
-      </div>
-    </div>  --> 
+      <div class="bannerrog">
+        <h1>ENZ-store</h1>
+      <img src="./assets/img/imagenes/asus rog.jpg" class="bannermq" alt="asusrog">
+    </div>
   </section>
 
 
@@ -84,7 +76,7 @@
         <div class="categorias">
 <button class="category active">Todos los productos</button>
 <button class="category" data-category="Monitores">Monitores</button>
-<button class="category" data-category="perisfericos">Perisféricos</button>
+<button class="category" data-category="perisfericos">Periféricos</button>
 <button class="category" data-category="placas de video">Placas de video</button>
 <button class="category" data-category="Procesadores">Procesadores</button>
 <button class="category" data-category="accesorios">Accesorios</button>
@@ -117,18 +109,30 @@
         <div class="info-card"><i class="fa-solid fa-desktop" alt="iconos-container"></i>
           <h3>Venta de articulos usados</h3>
           <p>
-            Proveemos de capacitaciones para futuros estudios de los alumnos, 
-            materias especificas previas para ingresar a una facultad para tener conocimientos
-            suficientes para ingresar de la mejor forma a ella.
+            vendemos componentes usados tambien y chequeados de la mejor forma para el uso, a veces la segunda mano tambien viene 
+            perfecto y para ahorrarse un poco de dinero o darle un mejor uso futuro viene bien, podras probar el componente y todas
+            proveen de garantía
           </p>
         </div>
       </div>
-      
+      <div class="hr">
+        <hr>
+    </div>
     </section>
-
+    <section id="sesiones">
+      <div class="text-sesiones"> <h3>Unete a nosotros</h3></div>
+      <div class="container-sesiones">
+      <ul class="ul-registro">
+        <li class="list-link cuentalogin"><a href="./assets/login/login.html">INICIA SESION </a></li>
+        <li class="list-link cuentasignup"><a href="./assets/login/account new/account.html">REGISTRATE </a></li>
+      </ul>
+    </div>
+        </section>
      </main>
+
+
   <footer class="container">
-      <div class="section-footer">
+      <section id="section-footer">
         <div class="contenedor-redes">
           <div class="text-redes">
             <h3>Nuestras Redes</h3>
@@ -165,10 +169,9 @@
           <h3>Data fiscal</h3>
           <img src="./assets/img/imagenes/Datafiscal.jpg" alt="dfiscal">
         </div>
-      </div>
+      </section>
     </footer>
-
-
+    <div class="add-modal"></div>
     <script src="./assets/data.js"></script>
     <script src="./assets/index.js"></script>
   </body>
